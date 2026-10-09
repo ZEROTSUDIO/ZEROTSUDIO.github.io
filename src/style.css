@@ -2,20 +2,23 @@
 @import "tailwindcss";
 
 :root {
-  --paper: #ECE6D6;
-  --paper-dim: #E1D9C4;
-  --card: #F4F0E4;
-  --ink: #1C1B19;
-  --ink-soft: #4A453C;
-  --purple: #7C5CE0;
-  --purple-ink: #2E2678;
-  --purple-mid: #9370DB;
-  --blood: #D91E2B;
-  --orange: #E8631F;
-  --orange-ink: #7A320D;
-  --teal: #1B8F9E;
-  --teal-ink: #0D454D;
-  --annot: #8A8578;
+  --paper: #FFFFFF;
+  --paper-dim: #F4F1FA;
+  --card: #FFFFFF;
+  --ink: #0A090D;
+  --ink-soft: #4B4556;
+  --purple: #7C3AED;
+  --purple-deep: #5B1AA0;
+  --purple-mid: #9333EA;
+  --purple-light: #C06BF0;
+  --purple-soft: #DDD6FE;
+  --purple-ink: #1B0E33;
+  --blood: #9333EA;
+  --orange: #C06BF0;
+  --orange-ink: #3B0764;
+  --teal: #5B1AA0;
+  --teal-ink: #1E0A38;
+  --annot: #8C849B;
 }
 
 * {
@@ -134,7 +137,7 @@ section {
 }
 .tag-purple { background: var(--purple); color: #fff; }
 .tag-blood { background: var(--blood); color: #fff; }
-.tag-orange { background: var(--orange); color: var(--orange-ink); }
+.tag-orange { background: var(--orange); color: #fff; }
 .tag-teal { background: var(--teal); color: #fff; }
 
 /* Panels */
@@ -160,7 +163,7 @@ section {
 .chip:hover {
   transform: translate(-2px, -2px);
   box-shadow: 3px 3px 0 var(--ink);
-  background: #ffffff;
+  background: var(--paper-dim);
 }
 .chip-dot {
   width: 22px;
@@ -260,14 +263,14 @@ section {
 .split-bg .a {
   position: absolute;
   inset: 0;
-  background: var(--purple);
+  background: var(--purple-deep);
   clip-path: polygon(0 0, 58% 0, 36% 100%, 0% 100%);
   opacity: 0.85;
 }
 .split-bg .b {
   position: absolute;
   inset: 0;
-  background: var(--orange);
+  background: var(--purple-light);
   clip-path: polygon(76% 0, 100% 0, 100% 100%, 54% 100%);
   opacity: 0.85;
 }
